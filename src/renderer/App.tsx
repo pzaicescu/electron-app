@@ -16,8 +16,14 @@ function Hello() {
   return (
     <div>
       <h1 className={value > 5 ? 'green' : 'blue'}>{value}</h1>
-      <button onClick={handleAddition}>+</button>
-      <button onClick={handleSubtraction}>-</button>
+      {/* eslint-disable-next-line react/button-has-type */}
+      <button id="add" onClick={handleAddition}>
+        +
+      </button>
+      {/* eslint-disable-next-line react/button-has-type */}
+      <button id="subtract" onClick={handleSubtraction}>
+        -
+      </button>
     </div>
   );
 }
